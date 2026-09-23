@@ -154,7 +154,7 @@ with aba_chat:
     st.subheader("💬 Atendimento")
     st.caption("Converse com a Sorveteria Glacê")
     
-    # Exibir histórico de chat
+    # Exibir histórico do chat
     for msg in st.session_state.chat_mensagens:
         with st.chat_message("user" if msg["remetente"] == "👤 Você" else "assistant"):
             st.write(msg["texto"])
